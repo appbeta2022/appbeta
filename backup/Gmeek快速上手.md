@@ -1,8 +1,8 @@
+[来源:Meekdai](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
+
 [Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于Github Pages 、 Github Issues 和 Github Actions，可以称作All in Github。不需要本地部署，从搭建到写作，只需要18秒，2步搭建好博客，第3步就是写作。
 
-一、安装
-
-Important
+### 一、安装
 
 安装及其简单，但是也要认真看下面的步骤，一步一步来。
 【创建仓库】点击通过模板创建仓库，建议仓库名称为XXX.github.io，其中XXX为你的github用户名。
@@ -14,12 +14,10 @@ Important
 【手动全局生成】这个步骤只有在修改config.json 文件或者出现奇怪问题的时候，需要执行。
 
 通过Actions->build Gmeek->Run workflow->里面的按钮全局重新生成一次
-Note
 
 网友制作的视频教程：https://www.bilibili.com/video/BV1GM4m1m7ZD/
-二、配置文件
 
-Tip
+### 二、配置文件
 
 按照安装步骤成功搭建好后，就可以阅读下面的内容修改配置文件啦。
 注意修改配置文件后一定要手动全局生成一次，不然会报错。
@@ -102,58 +100,58 @@ bottomText    用于设置文章页面右下角显示的内容
 ogImage    用于设置Open Graph协议展示的图片
 primerCSS    用于设置primer.css的CDN地址，默认使用南科大
 needComment    用于设置是否需要评论功能，1开启评论，0关闭
-三、常见问题
+### 三、常见问题
 
-1. 搭建不成功
+#### 1. 搭建不成功
 
 多半是没有按照安装步骤来，其实搭建就这2步，不要自己乱点乱设置，就不会有问题。
 
 案例一：Meekdai/Gmeek#14
 案例二：Meekdai/Gmeek#18
 案例二：Meekdai/Gmeek#20
-2. Actions执行失败
+#### 2. Actions执行失败
 
 修改了config.json配置文件后，需要全局生成。另外label标签没有打会出现这个问题。
 建议通过Actions->build Gmeek->Run workflow->里面的按钮全局重新生成一次
 
 案例一：Meekdai/Gmeek#1
 案例二：Meekdai/Gmeek#10
-3. 导入以前的文章
+#### 3. 导入以前的文章
 
 如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下网站转换。
 
 <!-- ##{"timestamp":1490764800}## -->
-4. 自定义单篇文章参数
+#### 4. 自定义单篇文章参数
 
 自定义单篇文章页面的style和script
 
 <!-- ##{"style":"<style>#postBody{font-size:20px}</style>"}## -->
 <!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>"}## -->
-5. 多种自定义参数
+#### 5. 多种自定义参数
 
 可同时一起添加多种自定义参数：
 
 <!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>","style":"<style>#postBody{font-size:20px}</style>","timestamp":1490764800}## -->
-6. 自定义全局文章参数
+#### 6. 自定义全局文章参数
 
 添加全局文章页面的style和script，在config.json文件中添加
 
 "style":"<style>#postBody{font-size:20px}</style>",
 "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>",
-7. 置顶博客文章
+#### 7. 置顶博客文章
 
 只需要Pin issue后，手动全局生成一次即可。
 
-8. utteranc报错
+#### 8. utteranc报错
 
 如果在评论里面登录后评论报错，可直接按照提示安装utteranc app即可
 
 Error: utterances is not installed on xxx/xxx.github.io. If you own this repo, install the app. Read more about this change in the PR.
-9. 删除文章
+#### 9. 删除文章
 
 只需要Close issue或者Delete issue后，再手动全局生成一次即可。
 
-四、进阶教程
+### 四、进阶教程
 
 Gmeek的可定制化功能非常高，下面的链接是一些更加高级的设置教程，还有插件的使用等。
 https://meekdai.github.io/tag.html#Gmeek
