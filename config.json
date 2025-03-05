@@ -3,6 +3,6 @@
     "subTitle":"资料收集",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last",
-    "script":"<script src='GmeekTOC.js'></script>"
+    "script":"<script src='/GmeekTOC.js'></script>"
 
 }
