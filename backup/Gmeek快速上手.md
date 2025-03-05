@@ -1,5 +1,7 @@
+> [!TIP]
 [来源:Meekdai](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
 
+> [!NOTE]
 [Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于Github Pages 、 Github Issues 和 Github Actions，可以称作All in Github。不需要本地部署，从搭建到写作，只需要18秒，2步搭建好博客，第3步就是写作。
 
 ### 一、安装
@@ -120,24 +122,28 @@ needComment    用于设置是否需要评论功能，1开启评论，0关闭
 
 如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下网站转换。
 
-<!-- ##{"timestamp":1490764800}## -->
+`<!-- ##{"timestamp":1490764800}## -->`
 #### 4. 自定义单篇文章参数
 
 自定义单篇文章页面的style和script
 
+```
 <!-- ##{"style":"<style>#postBody{font-size:20px}</style>"}## -->
 <!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>"}## -->
+```
 #### 5. 多种自定义参数
 
 可同时一起添加多种自定义参数：
 
-<!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>","style":"<style>#postBody{font-size:20px}</style>","timestamp":1490764800}## -->
+`<!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>","style":"<style>#postBody{font-size:20px}</style>","timestamp":1490764800}## -->`
 #### 6. 自定义全局文章参数
 
 添加全局文章页面的style和script，在config.json文件中添加
 
+```
 "style":"<style>#postBody{font-size:20px}</style>",
 "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>",
+```
 #### 7. 置顶博客文章
 
 只需要Pin issue后，手动全局生成一次即可。
