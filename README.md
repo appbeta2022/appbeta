@@ -1,5 +1,7 @@
 https://appbeta2022.github.io/appbeta/
 
+https://blog.meekdai.com
+
 https://github.com/Meekdai/Gmeek
 
 > [!NOTE]
