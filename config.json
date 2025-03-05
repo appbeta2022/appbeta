@@ -3,5 +3,5 @@
     "subTitle":"资料收集",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last",
-    "script":"<script src='https://blog.expself.cn/GmeekTOC.js'></script>"
+    "script":"<script src='https://blog.expself.cn/plugins/GmeekTOC.js'></script>"
 }
