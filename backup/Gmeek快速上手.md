@@ -6,34 +6,38 @@
 
 ### 一、安装
 
+> [!IMPORTANT]
 安装及其简单，但是也要认真看下面的步骤，一步一步来。
-【创建仓库】点击通过模板创建仓库，建议仓库名称为XXX.github.io，其中XXX为你的github用户名。
 
-【启用Pages】在仓库的设置Settings中Pages->Build and deployment->Source下面选择Github Actions。
+1. 【创建仓库】点击通过模板创建仓库，建议仓库名称为XXX.github.io，其中XXX为你的github用户名。
+2. 【启用Pages】在仓库的设置Settings中Pages->Build and deployment->Source下面选择Github Actions。
+3. 【开始写作】打开一篇issue，开始写作，并且必须添加一个标签Label（至少添加一个），再保存issue后会自动创建博客内容，片刻后可通过https://XXX.github.io 访问（可进入Actions页面查看构建进度）。
+4. 【手动全局生成】这个步骤只有在修改config.json 文件或者出现奇怪问题的时候，需要执行。
+5. 通过Actions->build Gmeek->Run workflow->里面的按钮全局重新生成一次
 
-【开始写作】打开一篇issue，开始写作，并且必须添加一个标签Label（至少添加一个），再保存issue后会自动创建博客内容，片刻后可通过https://XXX.github.io 访问（可进入Actions页面查看构建进度）。
-
-【手动全局生成】这个步骤只有在修改config.json 文件或者出现奇怪问题的时候，需要执行。
-
-通过Actions->build Gmeek->Run workflow->里面的按钮全局重新生成一次
-
+> [!NOTE]
 网友制作的视频教程：https://www.bilibili.com/video/BV1GM4m1m7ZD/
 
 ### 二、配置文件
 
+> [!TIP]
 按照安装步骤成功搭建好后，就可以阅读下面的内容修改配置文件啦。
 注意修改配置文件后一定要手动全局生成一次，不然会报错。
 如果对json格式不熟悉，建议先简单学习一下。
+
 config.json 文件就是配置文件，在创建的仓库内可以找到，对应修改为自己的即可。
 
+```
 {
     "title":"Meekdai",
     "subTitle":"童话是一种生活态度，仅此而已。",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last"
 }
+```
 以上是必须的字段，下面是可以自定义字段的描述，可以选择加入到config.json中。
 
+```
 "displayTitle":"Meekdai",
 "homeUrl":"http://blog.meekdai.com",
 "faviconUrl":"https://github.githubassets.com/favicons/favicon.svg",
@@ -64,9 +68,11 @@ config.json 文件就是配置文件，在创建的仓库内可以找到，对�
 "ogImage":"https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg",
 "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
 "needComment":0,
-Caution
+```
 
+> [!CAUTION]
 最后一行配置末尾不需要逗号，其他行末尾都需要逗号（英文逗号）
+
 配置参数    说明
 title    【必填】博客标题
 subTitle    【必填】博客描述&自述
@@ -102,6 +108,7 @@ bottomText    用于设置文章页面右下角显示的内容
 ogImage    用于设置Open Graph协议展示的图片
 primerCSS    用于设置primer.css的CDN地址，默认使用南科大
 needComment    用于设置是否需要评论功能，1开启评论，0关闭
+
 ### 三、常见问题
 
 #### 1. 搭建不成功
