@@ -1,6 +1,6 @@
-# 集合 :link: https://appbeta2022.github.io/appbeta 
-### :page_facing_up: [1](https://appbeta2022.github.io/appbeta/tag.html) 
+# 集合 :link: http://blog.expself.cn 
+### :page_facing_up: [1](http://blog.expself.cn/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 4790 
-### :alarm_clock: 2025-03-05 15:15:08 
+### :alarm_clock: 2025-03-06 07:59:15 
 ### Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
