@@ -14,6 +14,8 @@
 来源：知乎
 连接：https://zhuanlan.zhihu.com/p/453549877
 
+![Image](https://github.com/user-attachments/assets/fd5dc4be-6112-4b25-af66-35e84230cb76)
+
 由于很多地方的宽带80/443端口被封，所以无法做到无端口号访问nas服务。我一开始就想那利用反向代理服务的二级域名+端口和直接用自己的群晖域名+端口有啥区别？后来貌似想明白了，因为群晖服务变多后，端口号也相应的增加，总会记不住一些服务的端口号。所以可以利用反向代理服务统一一个好记的端口号，只改变前面的二级域名就行了。比如：[photo.xxx.com:666](https://link.zhihu.com/?target=http%3A//photo.xxx.com%3A666) video.xxx.com:666
 
 废话不多说，开始！
